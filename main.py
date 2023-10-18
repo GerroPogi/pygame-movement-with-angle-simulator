@@ -63,7 +63,7 @@ def main():
     WIDTH,HEIGHT=1000,600
     win=pygame.display.set_mode((WIDTH,HEIGHT))
     run=True
-    Player=Player()
+    player=Player()
     clock=pygame.time.Clock()
     while run:
         clock.tick(60)
@@ -71,7 +71,7 @@ def main():
             if event.type == pygame.QUIT:
                 run=False
         win.fill((100,100,100))
-        Player.run()
+        player.run()
         pygame.display.update()
     pygame.quit()
 if __name__ == "__main__":
